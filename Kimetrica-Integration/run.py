@@ -32,7 +32,7 @@ def storeResults(model_name, bucket, result_name, key):
         shutil.copy(result_path, f'/usr/src/app/output/{key}')
         logging.info(f"{model_name} output path is: {result_path}")
 
-    elif model_name == "population_model":
+    elif model_name == "population_model";
         result_path = glob.glob(f'/usr/src/app/output/{result_name}')[0]
         if not os.path.exists(f'/usr/src/app/output/results/{model_name}'):
             os.makedirs(f'/usr/src/app/output/results/{model_name}')
